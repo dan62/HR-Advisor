@@ -7,6 +7,8 @@ This repository contains various implementations of the Github REST API along wi
 ## Tech Stack 💻
 - NodeJS (HapiJS Framework)
 - HandlebarsJS Framework (Frontend Templating)
+- Chai and Mocha (Testing Frameworks)
+- Postman for simulating API calls
 
 ## Getting Started
 1. Clone this respository
