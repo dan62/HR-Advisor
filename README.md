@@ -1,7 +1,10 @@
-# HR-Advisor
+# HR-Advisor 📈
 This repository contains various implementations of the Github REST API along with the development of custom API endpoints making use of algorithms for sorting data. The idea of the system is to have a portal that combines various Github Statistics into tables and charts that can be read and analized by human resources individuals to find out potential candidates for Software Engineering positions.
 
-## Tech Stack
+![screenshot](http://cselected.com/screenshot.png)
+
+
+## Tech Stack 💻
 - NodeJS (HapiJS Framework)
 - HandlebarsJS Framework (Frontend Templating)
 
