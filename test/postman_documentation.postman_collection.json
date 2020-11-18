@@ -1,0 +1,74 @@
+{
+	"info": {
+		"_postman_id": "d4720275-5423-453b-a03b-e4c86eadc669",
+		"name": "Pomelo Challenge",
+		"description": "This documentation contains the endpoint data for the Pomelo NodeJS challenge ",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Match Parents with Children",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"0\":\n  [{\"id\": 10,\n    \"title\": \"House\",\n    \"level\": 0,\n    \"children\": [],\n    \"parent_id\": null}],\n \"1\":\n  [{\"id\": 12,\n    \"title\": \"Red Roof\",\n    \"level\": 1,\n    \"children\": [],\n    \"parent_id\": 10},\n   {\"id\": 18,\n    \"title\": \"Blue Roof\",\n    \"level\": 1,\n    \"children\": [],\n    \"parent_id\": 10},\n   {\"id\": 13,\n    \"title\": \"Wall\",\n    \"level\": 1,\n    \"children\": [],\n    \"parent_id\": 10}],\n \"2\":\n  [{\"id\": 17,\n    \"title\": \"Blue Window\",\n    \"level\": 2,\n    \"children\": [],\n    \"parent_id\": 12},\n   {\"id\": 16,\n    \"title\": \"Door\",\n    \"level\": 2,\n    \"children\": [],\n    \"parent_id\": 13},\n   {\"id\": 15,\n    \"title\": \"Red Window\",\n    \"level\": 2,\n    \"children\": [],\n    \"parent_id\": 12}]}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/match_the_children",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"match_the_children"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Github Search",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.github.com/search/repositories?q=nodejs+language:nodejs&sort=stars&order=desc\n",
+					"protocol": "https",
+					"host": [
+						"api",
+						"github",
+						"com"
+					],
+					"path": [
+						"search",
+						"repositories"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "nodejs+language:nodejs"
+						},
+						{
+							"key": "sort",
+							"value": "stars"
+						},
+						{
+							"key": "order",
+							"value": "desc\n"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
